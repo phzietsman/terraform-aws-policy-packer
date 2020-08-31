@@ -1,0 +1,24 @@
+{
+    "NotAction": [
+        "iam:*",
+        "organizations:*",
+        "route53:*",
+        "budgets:*",
+        "waf:*",
+        "cloudfront:*",
+        "globalaccelerator:*",
+        "importexport:*",
+        "support:*",
+        "health:*",
+        "route53domains:*"
+    ],
+    "Resource": "*",
+    "Effect": "Deny",
+    "Condition": {
+        "StringNotEquals": {
+            "aws:RequestedRegion": [
+                "eu-west-1"
+            ]
+        }
+    }
+}

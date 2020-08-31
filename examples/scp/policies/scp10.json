@@ -1,0 +1,11 @@
+{
+    "Action": [
+        "ec2:AttachInternetGateway",
+        "ec2:CreateInternetGateway",
+        "ec2:AttachEgressOnlyInternetGateway",
+        "ec2:CreateVpcPeeringConnection",
+        "ec2:AcceptVpcPeeringConnection"
+    ],
+    "Resource": "*",
+    "Effect": "Deny"
+}

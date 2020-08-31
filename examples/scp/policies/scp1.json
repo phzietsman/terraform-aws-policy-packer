@@ -1,0 +1,12 @@
+{
+  "Action": "*",
+  "Resource": "*",
+  "Effect": "Deny",
+  "Condition": {
+    "StringLike": {
+      "aws:PrincipalArn": [
+        "arn:aws:iam::*:root"
+      ]
+    }
+  }
+}

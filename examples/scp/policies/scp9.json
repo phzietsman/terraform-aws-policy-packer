@@ -1,0 +1,8 @@
+{
+    "Action": [
+        "globalaccelerator:Create*",
+        "globalaccelerator:Update*"
+    ],
+    "Resource": "*",
+    "Effect": "Deny"
+}

@@ -1,0 +1,10 @@
+{
+    "Action": [
+        "config:DeleteConfigRule",
+        "config:DeleteConfigurationRecorder",
+        "config:DeleteDeliveryChannel",
+        "config:StopConfigurationRecorder"
+    ],
+    "Resource": "*",
+    "Effect": "Deny"
+}

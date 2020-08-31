@@ -1,0 +1,7 @@
+{
+    "Action": [
+        "cloudtrail:StopLogging"
+    ],
+    "Resource": "*",
+    "Effect": "Deny"
+}

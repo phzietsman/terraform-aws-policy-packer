@@ -1,0 +1,10 @@
+{
+    "Action": [
+        "macie2:DisassociateFromMasterAccount",
+        "macie2:DisableOrganizationAdminAccount",
+        "macie2:DisableMacie",
+        "macie2:DeleteMember"
+    ],
+    "Resource": "*",
+    "Effect": "Deny"
+}

@@ -1,0 +1,11 @@
+{
+    "Action": [
+        "securityhub:DeleteInvitations",
+        "securityhub:DisableSecurityHub",
+        "securityhub:DisassociateFromMasterAccount",
+        "securityhub:DeleteMembers",
+        "securityhub:DisassociateMembers"
+    ],
+    "Resource": "*",
+    "Effect": "Deny"
+}
