@@ -1,4 +1,5 @@
-What does this 
+# terraform-aws-policy-packer
+Pack AWS policy SIDs to get around policy character limits.
 
 |   |   |
 |---|---|
