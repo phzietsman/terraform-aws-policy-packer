@@ -17,6 +17,14 @@ locals {
         statement_content = join(",\n", [ for _, statements in collections["collection"]: statements["statement"]]) 
       }))
   ]
+
+  policies_built_decoded_map = { 
+    for _, collections in data.javascript.algorithm.result:
+      substr(sha1(jsonencode(collections)), 0, 5) => jsondecode(templatefile("${path.module}/policy-body.tmpl", {
+        policy_version = var.policy_version
+        statement_content = join(",\n", [ for _, statements in collections["collection"]: statements["statement"]]) 
+      }))
+  }
 }
 
 

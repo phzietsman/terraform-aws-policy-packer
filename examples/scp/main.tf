@@ -27,9 +27,9 @@ module scp_packing {
 #   value = module.scp_packing.raw
 # }
 
-# output decoded {
-#   value = module.scp_packing.decoded
-# }
+output result_map {
+  value = module.scp_packing.result_map
+}
 
 output calcs {
   value = local.calcs
