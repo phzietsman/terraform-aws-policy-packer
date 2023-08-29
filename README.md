@@ -1,3 +1,5 @@
+**Note**: This module will move to [cloudandthings/policy-packer](https://registry.terraform.io/modules/cloudandthings/policy-packer/aws/latest)
+
 # terraform-aws-policy-packer
 Pack AWS policy SIDs to get around policy character limits.
 
