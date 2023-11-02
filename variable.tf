@@ -27,3 +27,9 @@ variable policy_statements {
     type = map(string)
     description = ""
 }
+
+variable "silence_deprecated_warning" {
+  type = bool
+  description = "Silence the deprecation warning."
+  default = false
+}

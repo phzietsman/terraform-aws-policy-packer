@@ -37,3 +37,12 @@ data "javascript" "algorithm" {
       INPUT_BIN_SIZE = local.character_limits[var.policy_type] - length(local.policy_body_empty) // Get the usuable charecter count
   }
 }
+
+data "validation_warning" "deprecated" {
+  condition = !var.silence_deprecated_warning
+  summary = "phzietsman/policy-packer/aws has moved and will be deprected. Use cloudandthings/policy-packer/aws instead."
+  details = <<EOF
+This module has been moved to the cloudandthings organization. Please use it instead.
+https://registry.terraform.io/modules/cloudandthings/policy-packer/aws/latest
+EOF
+}
